@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --bg-blue: #93B5C9;
+    --bg-wine: #AB2849;
+}
+
+header {
+    background: var(--bg-blue);
+    height: 90px;
+}
+
+main {
+    background: var(--bg-wine);
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 10vw 0 10vw;
+}
+
+section > *:not(:nth-child(3n+1)) {
+    flex: 1 1;
+}
+
+section > *:nth-child(3n+2) {
+    margin-right: 10px;
+}
+
+div {
+    background: var(--bg-wine);
+    height: 90px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+footer {
+    background: var(--bg-wine);
+    height: 80px;
+}
